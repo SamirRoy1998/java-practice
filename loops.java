@@ -53,20 +53,24 @@ public class loops {
 //        FOR LOOP (NOTE: FOR LOOP fist enter INITIALIZATION then check CONDITION and run to UP-TO-DATE SECTION
 //                        then run program AND again check CONDITION until CONDITION false then exit loop)
 //--------------------------------------
-//        for (int fl=1; fl<=10; fl++){
-//            System.out.println(" 5 * "+ fl+ " = "+ 5*fl);
-//        }
-        int fl1=10;
-            System.out.println("Here is first 10 Odd numbers");
-        for (int i=0; i<fl1; i++) {
-            System.out.println(2 * i + 1);
+        for (int fl1=1; fl1<=10; fl1++){
+            System.out.println(" 5 X "+ fl1+ " = "+ 5*fl1);
         }
-        int fl2=10;
-            System.out.println("Here is first 10 Even numbers");
-        for (int i=0; i<fl2; i++){
-            System.out.println(2*i);
+        System.out.println("Decrementing Loop");
+        for (int fl2=10; fl2>=1; fl2--){
+            System.out.println(" 5 X "+ fl2+ " = "+ 5*fl2);
         }
 
+//        int fl1=10;
+//            System.out.println("Here is first 10 Odd numbers");
+//        for (int i=0; i<fl1; i++) {
+//            System.out.println(2 * i + 1);
+//        }
+//        int fl2=10;
+//            System.out.println("Here is first 10 Even numbers");
+//        for (int i=0; i<fl2; i++){
+//            System.out.println(2*i);
+//        }
 
 //--------------------------------------
 
