@@ -57,12 +57,12 @@ public class loops {
 //            System.out.println(" 5 * "+ fl+ " = "+ 5*fl);
 //        }
         int fl1=10;
-            System.out.println("Here is first Odd 10 numbers");
+            System.out.println("Here is first 10 Odd numbers");
         for (int i=0; i<fl1; i++) {
             System.out.println(2 * i + 1);
         }
         int fl2=10;
-            System.out.println("Here is first Odd 10 numbers");
+            System.out.println("Here is first 10 Even numbers");
         for (int i=0; i<fl2; i++){
             System.out.println(2*i);
         }
