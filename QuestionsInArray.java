@@ -81,7 +81,7 @@ public class QuestionsInArray {
 //    Find the biggest and smallest element in an array
 //    -------------------------------------
         int [] abc={10,23,36,72,12,45,85,1,10,9};
-        int biggest=0;
+        int biggest=Integer.MIN_VALUE;
         for (int e:abc){
             if (e>biggest){
                 biggest=e;
