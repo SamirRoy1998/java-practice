@@ -13,6 +13,13 @@ public class OperationsOnArrays {
                 for (int fl=0; fl<arr.length; fl++){
                     System.out.println(arr[fl]);
         }
+        System.out.print("The sum of this array is: ");
+                int sum=0;
+                for (int element:arr){
+                    sum = sum+element;
+                }
+        System.out.println(sum);
+
         System.out.println("Third int in this array: "+ arr[2] + "\n");
 
 
