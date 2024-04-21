@@ -75,6 +75,16 @@ public class QuestionsInArray {
             System.out.print(element+" ");
         }
         System.out.println("\nExample: "+arr[2]); //before index no 2=5 but now index no 2=8
-
+//    -------------------------------------
+//    Find the maximum element in an array
+//    -------------------------------------
+        int [] abc={10,23,36,72,12,45,85,1,10,9};
+        int max=0;
+        for (int e:abc){
+            if (e>max){
+                max=e;
+            }
+        }
+        System.out.print("The Value of the maximum element in this array is: "+max);
     }
 }
