@@ -91,5 +91,22 @@ public class QuestionsInArray {
         Arrays.sort(abc);
         int smallest=abc[0];
         System.out.println("The value of the smallest element in this array is: "+smallest);
+//    -------------------------------------
+//    Array sorted or not
+//    -------------------------------------
+        boolean sorted= true;
+        int [] xyz= {10,20,30,40,50,60,70,10,9};
+        for(int i=0; i<xyz.length-1; i++){
+            if( xyz[i] > xyz[i+1] ){
+                sorted= false;
+                break;
+            }
+        }
+        if (sorted){
+            System.out.println("The array is sorted");
+        }
+        else {
+            System.out.println("The array isn't sorted");
+        }
     }
 }
