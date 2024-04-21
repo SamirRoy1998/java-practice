@@ -1,5 +1,7 @@
 package pkg1;
 
+import java.util.Arrays;
+
 public class QuestionsInArray {
     public static void main(String[] args) {
 //    -------------------------------------
@@ -76,15 +78,18 @@ public class QuestionsInArray {
         }
         System.out.println("\nExample: "+arr[2]); //before index no 2=5 but now index no 2=8
 //    -------------------------------------
-//    Find the maximum element in an array
+//    Find the biggest and smallest element in an array
 //    -------------------------------------
         int [] abc={10,23,36,72,12,45,85,1,10,9};
-        int max=0;
+        int biggest=0;
         for (int e:abc){
-            if (e>max){
-                max=e;
+            if (e>biggest){
+                biggest=e;
             }
         }
-        System.out.print("The Value of the maximum element in this array is: "+max);
+        System.out.println("The value of the biggest element in this array is: "+biggest);
+        Arrays.sort(abc);
+        int smallest=abc[0];
+        System.out.println("The value of the smallest element in this array is: "+smallest);
     }
 }
