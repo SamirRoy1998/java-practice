@@ -57,5 +57,24 @@ public class QuestionsInArray {
             }
             System.out.println();
         }
+//    -------------------------------------
+//    Revering array
+//    -------------------------------------
+        int [] arr = {7, 2, 5, 8, 1, 10};
+        int l = arr.length;
+        int hl = Math.floorDiv(l, 2);
+        int temp;
+        System.out.println("Array is now reverse");
+
+        for(int i=0; i<hl; i++){
+            temp = arr[i];
+            arr[i] = arr[l-i-1];
+            arr[l-i-1] = temp;
+        }
+        for (int element:arr){
+            System.out.print(element+" ");
+        }
+        System.out.println("\nExample: "+arr[2]); //before index no 2=5 but now index no 2=8
+
     }
 }
