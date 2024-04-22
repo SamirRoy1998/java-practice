@@ -14,7 +14,6 @@ public class methodsInJava {
         }
         return z;
     }
-
 //--------------------------------------------------------------------
 //          NON-STATIC METHODS (Note: Using non-static methods you have to create an object to call logic)
 //--------------------------------------------------------------------
@@ -27,6 +26,18 @@ public class methodsInJava {
             z= x*y;
         }
         return z;
+    }
+//--------------------------------------------------------------------
+//            METHODS OVERLOADING
+//--------------------------------------------------------------------
+    static void mo(){
+        System.out.println("Hi! Nice to meet you.");
+    }
+    static void mo(String a){
+        System.out.println("Hi "+a+"! Nice to meet you.");
+    }
+    static void mo(String a,String b){
+        System.out.println("Hi "+a+" and "+b+"! Nice to meet you both.");
     }
 //--------------------------------------------------------------------
     public static void main(String[] args) {
@@ -48,6 +59,10 @@ public class methodsInJava {
         System.out.println(c1l1+" = This is 1st data's result using STATIC METHODS");
         System.out.println(c1l2+" = This is 1st data's result using NON-STATIC METHODS");
         System.out.println(c2l1+" = This is 2nd data's result using STATIC METHODS");
-        System.out.println(c2l2+" = This is 2nd data's result using NON-STATIC METHODS");
+        System.out.println(c2l2+" = This is 2nd data's result using NON-STATIC METHODS\n\n");
+
+        mo();
+        mo("Samir");
+        mo("Samir","Susmita");
     }
 }
