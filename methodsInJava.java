@@ -35,15 +35,15 @@ public class methodsInJava {
         int b1= 7;
         int c1l1;
         int c1l2;
-        c1l1= logic1(a1,b1);          //-> Calling logic using STATIC METHODS
-        c1l2= obj.logic2(a1,b1);      //-> Calling logic using NON-STATIC METHODS
+        c1l1= logic1(a1,b1);          //-> Calling STATIC METHODS
+        c1l2= obj.logic2(a1,b1);      //-> Calling NON-STATIC METHODS
 
         int a2= 9;
         int b2= 7;
         int c2l1;
         int c2l2;
-        c2l1= logic1(a2,b2);          //-> Calling logic using STATIC METHODS
-        c2l2= obj.logic2(a2,b2);      //-> Calling logic using NON-STATIC METHODS
+        c2l1= logic1(a2,b2);          //-> Calling STATIC METHODS
+        c2l2= obj.logic2(a2,b2);      //-> Calling NON-STATIC METHODS
 
         System.out.println(c1l1+" = This is 1st data's result using STATIC METHODS");
         System.out.println(c1l2+" = This is 1st data's result using NON-STATIC METHODS");
