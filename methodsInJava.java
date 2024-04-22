@@ -19,12 +19,12 @@ public class methodsInJava {
         int a1= 5;
         int b1= 7;
         int c1;
-        c1= logic1(a1,b1);      //-> Using STATIC METHODS
+        c1= logic1(a1,b1);      //-> Calling using STATIC METHODS
 
         int a2= 9;
         int b2= 7;
         int c2;
-        c2= logic1(a2,b2);      //-> Using STATIC METHODS
+        c2= logic1(a2,b2);      //-> Calling using STATIC METHODS
 
         System.out.println(c1);
         System.out.println(c2);
