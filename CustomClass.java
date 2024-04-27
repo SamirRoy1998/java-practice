@@ -18,6 +18,21 @@ class StudentDetails{
         System.out.println(total = s1 + s2 + mil + eng);
     }
 }
+// 2nd Custom Class
+class AreaAndPerimeterCal{
+    long Length;
+    long Width;
+    long Area;
+    long Perimeter;
+    public long getArea(){
+        Area = Length * Width;
+        return Area;
+    }
+    public long getPerimeter(){
+        Perimeter = (Length+Width)*2;
+        return Perimeter;
+    }
+}
 
 public class CustomClass {
     public static void main(String[] args) {
@@ -57,5 +72,26 @@ public class CustomClass {
         id1004.getDetails();
     // now calling custom class's second method from the main class
         id1003.getTotal();
+    // Creating 2nd class's objects
+        AreaAndPerimeterCal sample1 = new AreaAndPerimeterCal();
+        AreaAndPerimeterCal sample2 = new AreaAndPerimeterCal();
+        AreaAndPerimeterCal sample3 = new AreaAndPerimeterCal();
+        AreaAndPerimeterCal sample4 = new AreaAndPerimeterCal();
+         sample1.Width = 25;
+         sample1.Length = 25;
+         sample2.Width = 50;
+         sample2.Length = 25;
+         sample3.Width = 25;
+         sample3.Length = 50;
+         sample4.Width = 36;
+         sample4.Length = 25;
+        System.out.println("Sample no 1 area is: "+sample1.getArea());
+        System.out.printf("Sample no 1 Parimeter is: %d%n", sample1.getPerimeter());
+        System.out.println(sample2.getArea());
+        System.out.println(sample2.getPerimeter());
+        System.out.println(sample3.getArea());
+        System.out.println(sample3.getPerimeter());
+        System.out.println(sample4.getArea());
+        System.out.println(sample4.getPerimeter());
     }
 }
