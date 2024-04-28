@@ -1,79 +1,72 @@
 package pkg1;
-
 import java.util.Random;
 import java.util.Scanner;
 
-class Game {
-    private int computerNumber;
-    private int numberOfGuesses=0;
+class GuessGame{
+    int noOfGuess;
+    int comGenNum=0;
 
-    Scanner sc=new Scanner(System.in);
-    Random rn=new Random();
+    Scanner sc = new Scanner(System.in);
+    Random rn = new Random();
 
-    public Game() {
-        computerNumber=rn.nextInt(101);
+    public GuessGame(){
+        comGenNum = rn.nextInt(101);
     }
-
-    public int takeUserInput() {
-        System.out.println("Guess the number (1-100) : ");
-        int userNumber=sc.nextInt();
-        return userNumber;
+    public int input(){
+        System.out.print("Enter your number: ");
+        int userInput = sc.nextInt();
+        return userInput;
     }
-
-    public boolean isCorrectNumber(int myNum) {
-        int flag=0;
-
-        if(myNum<=100 && myNum>=0) {
-            setNumberOfGuesses();
-            if(myNum==computerNumber) {
-                System.out.println("You guessed it right. The number is "+myNum);
-                flag=1;
+    public void setNum(){
+        noOfGuess++;
+    }
+    public void getNum(){
+        System.out.print(noOfGuess);
+    }
+    public boolean isCorr(int userNum){
+        int flag = 0;
+        if (userNum>=0 && userNum<=101){
+            setNum();
+            if (userNum==comGenNum){
+                System.out.println("Bravo! You Guess the right number: "+ userNum);
+                flag = 1;
                 sc.close();
             }
-            else if(myNum<computerNumber) {
-                System.out.println("Your number is less than the actual number");
+            else if (userNum>comGenNum) {
+                System.out.println("Your number is bigger than System Generate number, Try Again.");
             }
-            else if(myNum>computerNumber) {
-                System.out.println("Your number is greater than the actual number");
+            else if (userNum<comGenNum) {
+                System.out.println("Your number is smaller than System Generate number, Try Again.");
             }
         }
         else {
-            System.out.println("Please enter in range 0-100");
+            System.out.println("Enter a number between 0 to 100");
         }
-        if(flag==1) {
+        if (flag==0){
+            return false;
+        } else {
             return true;
         }
-        else {
-            return false;
-        }
-    }
-    public void setNumberOfGuesses() {
-        numberOfGuesses++;
-    }
-    public void getNumberOfGuesses() {
-        System.out.print(numberOfGuesses);
     }
 }
 
 public class GuessTheNumber {
     public static void main(String[] args) {
-        Game myGame=new Game();
-        boolean playGame=true;
-        int userNumber;
-
-        while(playGame==true) {
-            userNumber=myGame.takeUserInput();
-            boolean myBool=myGame.isCorrectNumber(userNumber);
-            if(myBool==true) {
-                System.out.print("Guessed in ");
-                myGame.getNumberOfGuesses();
-                System.out.print(" Guesses");
-                System.out.println("");
-                playGame=false;
+        GuessGame mgame = new GuessGame();
+        boolean pg=true;
+        int uinput;
+        while ( pg==true){
+            uinput= mgame.input();
+            boolean bl=mgame.isCorr(uinput);
+            if (bl==true){
+                System.out.print("You guess the number in ");
+                mgame.getNum();
+                System.out.println(" guesses");
+                pg=false;
                 break;
             }
             else {
-                playGame=true;
+                pg=true;
             }
         }
     }
