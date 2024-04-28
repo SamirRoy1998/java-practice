@@ -4,6 +4,11 @@ class Cylinder1 {
     private int radius;
     private int height;
 
+    public Cylinder1(int radius, int height) {
+        this.radius = radius;
+        this.height = height;
+    }
+
     public int getHeight() {
         return height;
     }
@@ -38,14 +43,20 @@ public class cwh_44_ps09 {
         cylinder.setRadius(6);
         System.out.println(cylinder.getHeight());
         System.out.println(cylinder.getRadius());
-        */
-        //problem 2
+
+        problem 2
         Cylinder1 cylinder = new Cylinder1();
         cylinder.setHeight(24);
         cylinder.setRadius(6);
         System.out.println(cylinder.getHeight());
         System.out.println(cylinder.getRadius());
         System.out.println(cylinder.surfaceArea());
+        System.out.println(cylinder.volume());\
+        */
+        //problem 3
+        Cylinder1 cylinder = new Cylinder1(6, 24);
+        System.out.println(cylinder.surfaceArea());
         System.out.println(cylinder.volume());
+
     }
 }
