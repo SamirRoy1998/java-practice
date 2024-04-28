@@ -34,6 +34,24 @@ class Cylinder1 {
     }
 }
 
+class Rectangular1 {
+    private int length;
+    private int breadth;
+
+    public Rectangular1() {
+        this.length = 4;
+        this.breadth = 5;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public int getBreadth() {
+        return breadth;
+    }
+}
+
 public class cwh_44_ps09 {
     public static void main() {
         /*
@@ -52,11 +70,15 @@ public class cwh_44_ps09 {
         System.out.println(cylinder.getRadius());
         System.out.println(cylinder.surfaceArea());
         System.out.println(cylinder.volume());\
-        */
-        //problem 3
+
+        problem 3
         Cylinder1 cylinder = new Cylinder1(6, 24);
         System.out.println(cylinder.surfaceArea());
         System.out.println(cylinder.volume());
-
+        */
+        //problem 4
+        Rectangular1 r = new Rectangular1();
+        System.out.println(r.getLength());
+        System.out.println(r.getBreadth());
     }
 }
