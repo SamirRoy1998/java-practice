@@ -52,6 +52,23 @@ class Rectangular1 {
     }
 }
 
+class Sphere1 {
+    private int radius;
+
+    public Sphere1(int radius) {
+        this.radius = radius;
+    }
+
+    public double volume() {
+        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+    }
+
+    public double surfaceArea() {
+        return 4 * Math.PI * radius * radius;
+    }
+
+}
+
 public class cwh_44_ps09 {
     public static void main() {
         /*
@@ -75,10 +92,15 @@ public class cwh_44_ps09 {
         Cylinder1 cylinder = new Cylinder1(6, 24);
         System.out.println(cylinder.surfaceArea());
         System.out.println(cylinder.volume());
-        */
-        //problem 4
+
+        problem 4
         Rectangular1 r = new Rectangular1();
         System.out.println(r.getLength());
         System.out.println(r.getBreadth());
+        */
+        //problem 5
+        Sphere1 s = new Sphere1(5);
+        System.out.println(s.volume());
+        System.out.println(s.surfaceArea());
     }
 }
