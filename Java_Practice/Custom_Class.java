@@ -9,9 +9,8 @@ class Employee {
         System.out.println("My name is: " + name + " and my Id is: " + id);
     }
 
-    public int getSalary() {
+    public void getSalary() {
         System.out.println("My salary is: " + salary);
-        return salary;
     }
 }
 
