@@ -13,9 +13,9 @@ public class Methods_Overloading {
         System.out.println("Hi " + a + " and " + b + "! Nice to meet you both.");
     }
 
-    int greet(int a) {
-        System.out.println("Love you " + a);
-        return a;
+    int greet(int n) {
+        System.out.println("Love you " + n);
+        return n;
     }
 
     public static void main(String[] args) {
