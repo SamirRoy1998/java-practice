@@ -11,7 +11,7 @@ interface Wifi {
 }
 
 class CellPhone {
-    void callNumber(int phoneNumber) {System.out.printf("Calling %d%n", phoneNumber);}
+    void callNumber(long phoneNumber) {System.out.printf("Calling %d%n", phoneNumber);}
     void pickCall() {System.out.println("Connecting...");}
 }
 
