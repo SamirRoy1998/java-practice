@@ -22,7 +22,7 @@ class Example2 extends Thread{
     }
 }
 
-public class Multi_Threads {
+public class Multi_Threads_extends {
     public static void main() {
         Example1 e1 = new Example1();
         Example2 e2 = new Example2();
