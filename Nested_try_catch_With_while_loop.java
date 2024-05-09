@@ -15,9 +15,13 @@ public class Nested_try_catch_With_while_loop {
                 try {
                     System.out.println(arr[i]);
                     flag=false;
+                    break;
                 }
                 catch (ArrayIndexOutOfBoundsException e){
                     System.out.println("Entered index number isn't available");
+                }
+                finally {
+                    System.out.println("Hello i am finally block");
                 }
             }
             catch (Exception e){
