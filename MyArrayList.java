@@ -1,6 +1,7 @@
 package pkg1;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class MyArrayList {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class MyArrayList {
         l1.add(94);
         l1.add(91);
         l1.add(0,10000);
+        l1.sort(Comparator.reverseOrder());
 
 //        for (int i=0; i< l1.size(); i++){
 //            System.out.println(l1.get(i));
