@@ -1,6 +1,7 @@
 package pkg1;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class My_ArrayList1 {
     public static void main(String[] args) {
@@ -23,6 +24,15 @@ public class My_ArrayList1 {
         batch_2.remove(4);
         batch_1.addAll(batch_2);
         System.out.println(batch_1);
+        Collections.sort(batch_1);
+        System.out.println(batch_1);
+        System.out.println(batch_1.indexOf("Samir"));
+
+        ArrayList<String> cloneBatch1 =(ArrayList<String>)batch_1.clone();
+        cloneBatch1.add("John");
+//        Collections.sort(cloneBatch1);
+        System.out.println(cloneBatch1);
+//        System.out.println(batch_1);
 //        System.out.println(batch_2);
     }
 }
