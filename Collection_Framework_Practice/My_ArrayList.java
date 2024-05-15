@@ -1,6 +1,7 @@
 package pkg1.Collection_Framework_Practice;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
@@ -15,6 +16,9 @@ public class My_ArrayList {
         al.add(28);
         al.addFirst(36);
         System.out.println("My ArrayList" + al);
+
+        Collections.shuffle(al);
+        System.out.println("Shuffled ArrayList"+al);
 
         al.sort(Comparator.reverseOrder());
         System.out.println("Sorted" + al);
