@@ -113,13 +113,13 @@ public class Collection_Framework {
         ad.offer(49);
         ad.offer(2);
         ad.offer(23);
-        System.out.println("ArrayDeque: "+ad);
-        System.out.println("ArrayDeque poll last: "+ad.pollLast());
-        System.out.println("ArrayDeque: "+ad);
-        System.out.println("ArrayDeque poll first: "+ad.pollFirst());
-        System.out.println("ArrayDeque: "+ad);
-        System.out.println("ArrayDeque Remove object: "+ad.remove(49));
-        System.out.println("ArrayDeque After Remove: "+ad);
+        System.out.println("ArrayDeque: " + ad);
+        System.out.println("ArrayDeque poll last: " + ad.pollLast());
+        System.out.println("ArrayDeque: " + ad);
+        System.out.println("ArrayDeque poll first: " + ad.pollFirst());
+        System.out.println("ArrayDeque: " + ad);
+        System.out.println("ArrayDeque Remove object: " + ad.remove(49));
+        System.out.println("ArrayDeque After Remove: " + ad);
         System.out.println();
 
         HashMap<Integer, String> hm = new HashMap<>();
@@ -131,9 +131,22 @@ public class Collection_Framework {
         hm.put(23, "Shiva");
         hm.put(30, "Ankit");
         hm.put(1, "Ankit");
-        System.out.println("HashMap: "+hm);
-        System.out.println(hm.replace(1,"Satish"));
-        System.out.println("HashMap: "+hm);
+        System.out.println("HashMap: " + hm);
+        System.out.println(hm.replace(1, "Satish"));
+        System.out.println("HashMap: " + hm);
         System.out.println();
+
+        TreeMap<Integer, String> tm = new TreeMap<>();
+        tm.put(5, "Samir");
+        tm.put(55, "Ram");
+        tm.put(65, "Sham");
+        tm.put(7, "Hari");
+        tm.put(27, "Lokesh");
+        tm.put(23, "Shiva");
+        tm.put(30, "Ankit");
+        tm.put(1, "Ankit");
+        System.out.println("TreeMap: " + tm);
+        System.out.println(tm.replace(1, "Satish"));
+        System.out.println("TreeMap: " + tm);
     }
 }
