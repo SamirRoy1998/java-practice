@@ -118,7 +118,22 @@ public class Collection_Framework {
         System.out.println("ArrayDeque: "+ad);
         System.out.println("ArrayDeque poll first: "+ad.pollFirst());
         System.out.println("ArrayDeque: "+ad);
-        System.out.println(ad.remove(49));
-        System.out.println(ad);
+        System.out.println("ArrayDeque Remove object: "+ad.remove(49));
+        System.out.println("ArrayDeque After Remove: "+ad);
+        System.out.println();
+
+        HashMap<Integer, String> hm = new HashMap<>();
+        hm.put(5, "Samir");
+        hm.put(55, "Ram");
+        hm.put(65, "Sham");
+        hm.put(7, "Hari");
+        hm.put(27, "Lokesh");
+        hm.put(23, "Shiva");
+        hm.put(30, "Ankit");
+        hm.put(1, "Ankit");
+        System.out.println("HashMap: "+hm);
+        System.out.println(hm.replace(1,"Satish"));
+        System.out.println("HashMap: "+hm);
+        System.out.println();
     }
 }
