@@ -3,6 +3,7 @@ package pkg1.Collection_Framework_Practice;
 import java.util.Comparator;
 import java.util.Scanner;
 import java.util.Vector;
+import java.util.Iterator;
 
 public class My_Vector {
     public static void main(String[] args) {
@@ -41,10 +42,17 @@ public class My_Vector {
         v2.add(73);
 
         Vector<String> v3 = new Vector<>();
-        for (int e : v1){
-            if (v2.contains(e)){
+//        for (int e : v1){
+//            if (v2.contains(e)){
+//                v3.add("T");
+//            }else v3.add("F");
+//        }
+
+        Iterator i = v1.iterator();
+        while (i.hasNext()){
+            if (v2.contains(i.next())){
                 v3.add("True");
-            }else v3.add("False");
+            } else v3.add("False");
         }
         System.out.println(v1);
         System.out.println(v2);
