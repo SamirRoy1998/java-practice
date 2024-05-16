@@ -26,5 +26,22 @@ public class My_LinkedList {
                 break;
             } else System.out.println("Invalid input");
         }
+        LinkedList< Integer> ll2 = new LinkedList<>();
+        ll2.add(43);
+        ll2.add(23);
+        ll2.add(11);
+        ll2.add(36);
+        ll2.add(22);
+        ll2.add(26);
+
+        LinkedList<String>ll3 =new LinkedList<>();
+        for (Integer e:ll) {
+            if (ll2.contains(e)) {
+                ll3.add("True");
+            } else ll3.add("False");
+        }
+        System.out.println(ll);
+        System.out.println(ll2);
+        System.out.println(ll3);
     }
 }
